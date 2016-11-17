@@ -1,4 +1,5 @@
-export interface Marca{
+export interface TipoComida
+{
     _id: string;
     nome: string;
 }

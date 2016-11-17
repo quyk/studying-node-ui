@@ -5,23 +5,20 @@ import { IonicApp, IonicModule } from 'ionic-angular';
 import { MyApp } from './app.component';
 
 //IMPORT PAGES HERE
-import { MarcaPage } from '../pages/marca-page/marca-page';
-import { MarcaForm } from '../pages/marca-form/marca-form';
+import { Home } from '../pages/home/home';
+import { TipoList } from '../pages/tipo-list/tipo-list';
+import { TipoForm } from '../pages/tipo-form/tipo-form';
 
 //IMPORT PROVIDERS HERE
-import { MarcaData } from '../providers/marca-data';
+import { TipoData } from '../providers/tipo-data';
 
-import { Page1 } from '../pages/page1/page1';
-import { Page2 } from '../pages/page2/page2';
 
 @NgModule({
   //ADD PAGES HERE
   declarations: [
     MyApp,
-    MarcaPage,
-    MarcaForm,
-    Page1,
-    Page2
+    Home,
+    TipoList,
   ],
   imports: [
     IonicModule.forRoot(MyApp)
@@ -30,12 +27,10 @@ import { Page2 } from '../pages/page2/page2';
   //ADD PAGES HERE
   entryComponents: [
     MyApp,
-    MarcaPage,
-    MarcaForm,
-    Page1,
-    Page2
+    Home,
+    TipoList,
   ],
   //ADD PROVIDERS HERE
-  providers: [MarcaData]
+  providers: [TipoData]
 })
 export class AppModule {}
