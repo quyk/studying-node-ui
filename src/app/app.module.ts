@@ -8,10 +8,12 @@ import { MyApp } from './app.component';
 import { Home } from '../pages/home/home';
 import { TipoList } from '../pages/tipo-list/tipo-list';
 import { TipoForm } from '../pages/tipo-form/tipo-form';
+import { TipoComidaList } from '../pages/tipo-comida-list/tipo-comida-list';
+import { TipoComidaForm } from '../pages/tipo-comida-form/tipo-comida-form';
 
 //IMPORT PROVIDERS HERE
 import { TipoData } from '../providers/tipo-data';
-
+import { TipoComidaData } from '../providers/tipo-comida-data';
 
 @NgModule({
   //ADD PAGES HERE
@@ -19,6 +21,9 @@ import { TipoData } from '../providers/tipo-data';
     MyApp,
     Home,
     TipoList,
+    TipoForm,
+    TipoComidaList,
+    TipoComidaForm
   ],
   imports: [
     IonicModule.forRoot(MyApp)
@@ -29,8 +34,11 @@ import { TipoData } from '../providers/tipo-data';
     MyApp,
     Home,
     TipoList,
+    TipoForm,
+    TipoComidaList,
+    TipoComidaForm
   ],
   //ADD PROVIDERS HERE
-  providers: [TipoData]
+  providers: [TipoData, TipoComidaData]
 })
 export class AppModule {}
